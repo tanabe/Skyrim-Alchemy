@@ -60,7 +60,7 @@
             <th>効果 4</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody><?php include("./src/ingredients.html"); ?></tbody>
       </table>
 
       <h3 id="effects"><a name="effects">効果一覧</a></h3>
@@ -72,7 +72,7 @@
             <th>材料</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody><?php include("./src/effects.html"); ?></tbody>
       </table>
     </div>
 
@@ -83,5 +83,17 @@
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-73660-13']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </body>
 </html>
