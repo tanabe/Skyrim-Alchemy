@@ -2,4 +2,4 @@
 
 node src/export.js ingredients > src/ingredients.html
 node src/export.js effects > src/effects.html
-php src/source.html > index.html
+php src/source.html > ./public/index.html
