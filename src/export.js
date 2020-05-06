@@ -1,5 +1,8 @@
-var ingredients = (require('./ingredients.json')).ingredients;
-var effects = (require('./effects.json')).effects;
+let target = process.argv[2];
+let language = process.argv[3];
+
+let ingredients = (require(`./ingredients_${language}.json`)).ingredients;
+let effects = (require(`./effects_${language}.json`)).effects;
 
 var exportIngredients = function() {
   var html = '';
@@ -55,7 +58,8 @@ var exportEffects = function() {
   return html;
 };
 
-switch (process.argv[2]) {
+
+switch (target) {
   case 'ingredients' :
     console.log(exportIngredients());
     break;
